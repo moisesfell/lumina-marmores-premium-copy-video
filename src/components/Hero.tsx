@@ -3,8 +3,7 @@ import { ChevronDown } from 'lucide-react';
 
 export function Hero() {
   return (
-    <div className="relative h-[400vh] w-full mb-20">
-      <section className="sticky top-0 h-[100svh] w-full flex items-center justify-center">
+    <section className="relative h-[100svh] w-full flex items-center justify-center overflow-hidden">
         {/* Video Background */}
         <div className="absolute inset-0 z-0">
           <video
@@ -81,6 +80,5 @@ export function Hero() {
           <ChevronDown size={32} strokeWidth={1} />
         </motion.div>
       </section>
-    </div>
   );
 }
