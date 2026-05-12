@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #A68340;
+  --color-primary-dark: #8C6A2E;
+  --color-stone-light: #F7F7F6;
+  --color-stone-mid: #Ecece8;
+  --color-stone-dark: #D4D4D0;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+}
+
+body {
+  @apply bg-stone-light text-stone-600 font-sans antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-stone-900;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.text-gold {
+  @apply text-primary;
+}
+
+.bg-gold {
+  @apply bg-primary;
+}
+
+.border-gold {
+  @apply border-primary;
+}
+
+::selection {
+  @apply bg-primary/20 text-stone-900;
+}
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
