@@ -31,9 +31,9 @@ export function Materials() {
   return (
     <section id="materiais" className="py-32 bg-stone-mid">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-20 gap-8">
           <motion.div 
-            className="max-w-2xl"
+            className="max-w-2xl text-center md:text-left"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -44,7 +44,7 @@ export function Materials() {
           </motion.div>
           <motion.a 
             href="#contato"
-            className="border-b border-stone-400 text-stone-600 pb-1 hover:border-primary hover:text-primary transition-colors tracking-wide text-sm font-light uppercase"
+            className="border-b border-stone-400 text-stone-600 pb-1 hover:border-primary hover:text-primary transition-colors tracking-wide text-sm font-light uppercase text-center md:text-left"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
